@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       app: spring-boot-api
-  replicas: 3
+  replicas: 1
   strategy:
     type: RollingUpdate #Parameterize?
   template:
@@ -30,10 +30,10 @@ spec:
           resources:
             limits:
               cpu: 200m
-              memory: 1024Mi
+              memory: 2048Mi
             requests:
               cpu: 100m
-              memory: 512Mi
+              memory: 1024Mi
             
           ports:
           - containerPort: 8080
