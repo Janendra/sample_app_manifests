@@ -52,10 +52,10 @@ spec:
         subset: stable
         port: 
           number: 8080
-      weight: 90
+      weight: 50
     - destination:
         host: jackson-api
         subset: canary
         port: 
           number: 8080
-      weight: 10
+      weight: 50
