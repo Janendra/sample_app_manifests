@@ -3,7 +3,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deploy-canary
+  name: api-deploy-stable
   labels:
     app: spring-boot-api
 spec:
@@ -17,7 +17,7 @@ spec:
     metadata:
       labels:
         app: spring-boot-api
-        version: canary
+        version: stable
       annotations:
         prometheus.io/path: '/api/actuator/prometheus'
         prometheus.io/port: '8080'
