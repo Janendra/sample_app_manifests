@@ -9,6 +9,7 @@ metadata:
   labels:
     app: jackson
 spec:
+  type: LoadBalancer
   selector:
     app: spring-boot-api # Deployment name tag
   ports:
