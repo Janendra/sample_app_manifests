@@ -10,8 +10,8 @@ spec:
   selector:
     app: spring-boot-api # Deployment name tag
   ports:
-  - name: http
-    port: 8080
+    - name: http
+      port: 8080
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
